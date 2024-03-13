@@ -6,6 +6,222 @@
     <title>Document</title>
 </head>
 <body>
-    DEMO
+    <!-- Thẻ script dùng để viết mã javascript -->
+    <script>
+        // #Khai báo biến
+        // int ten_bien = gia trị;
+        // string ten_bien = giai
+
+        // #Cú pháp chung: var ten_bien = gia_tri_bien;
+
+
+        // =====Các kiểu dữ liệu cơ bản======
+
+        // Khai báo kiểu số (Number)
+        var myNumber1 = 10;
+        var myNumber2 = 5.5;
+        // console.log("myNumber1 => " + myNumber1);
+        // console.log("myNumber2 => " + myNumber2);
+
+        // Khai báo kiểu chuỗi (String)
+        var myString1 = 'Lương đần';
+        var myString2 = "10";
+        var myString3 = `Nguyễn Đức Đông`;
+        // console.log("myString1 => " + myString1);
+        // console.log("myString2 => " + myString2);
+        // console.log("myString3 => " + myString3);
+
+        // Khai báo kiểu Đúng sai (Boolean)
+        var myBoolean1 = true;
+        var myBoolean2 = false;
+        // console.log("myBoolean1 => " + myBoolean1);
+        // console.log("myBoolean2 => " + myBoolean2);
+
+        // Khai báo kiểu không có gì (Null)
+        var myNull1 = null;
+        var myNull2 = '';
+        // console.log("myNull1 => " + myNull1);
+        // console.log("myNull2 => " + myNull2);
+
+        // Khai báo kiểu không gán giá trị (Undefined)
+        var myUndefined;
+        // console.log("myUndefined => ", myUndefined);
+
+        // Khai báo Kiểu dữ liệu động:
+        var a;  //kiểu undefine
+        a = 10; //Kiểu number
+        a = 'demo'; //Kiểu string
+        a = true ; //kiểu boolean
+
+        // =====Cách đặt tên biến======
+
+        // Camel Case
+        var leVanLuong = 'abc';
+        var nguyenDucDong = 'cde';
+        var daoQuangManh = 'def';
+
+        // Pascal Case
+        var LeVanLuong = 'abc';
+        var NguyenDucDong = 'cde';
+        var DaoQuangManh = 'def';
+
+        // Kiểu Snake
+        var le_van_luong = 'abc';
+        var nguyen_duc_dong = 'cde';
+        var dao_quang_manh = 'def';
+
+        // =====Quy tắc đặt tên biến====
+        // Đặt tên biến bằng tiếng anh;
+        // Tên biến không được đầu bằng số;
+        // Không được dùng ký tự đặc biệt ở đầu
+
+        var quyen_sach = '1 quyển sách';
+        var book = '1 quyển sách';
+        var book_1 = '1 sách';
+        var book_2 = '2 sách';
+
+
+        // ==========Các kiểu dữ liệu nâng cao===========
+
+        // Kiểu mô tả đối tượng (Object)
+        var myPeople_1 = {
+            name: 'Nam',
+            age: 20
+        };
+        var myPeople_2 = {name: 'Đông', age: 21}
+
+        // console.log("myPeople_1 => ", myPeople_1);
+        // console.log("myPeople_2 => ", myPeople_2);
+
+        // var name_0 = 'Lương';
+        // var name_1 = 'Đông';
+        // var age_0 = 20;
+        // var age_1 = 21;
+        // console.log("name_0 => ", name_0);
+        // console.log("age_0 => ", age_0);
+        // console.log("name_1 => ", name_1);
+        // console.log("age_1 => ", age_1);
+
+        var luongInfo = {
+            name: 'Lương', 
+            age: '20'
+        }
+
+        var dongInfo = {
+            name: 'Đông', 
+            age: '21'
+        }
+
+        // console.log("luongInfo => " +  luongInfo.name + " " + luongInfo.age );
+        // console.log(`luongInfo => ${luongInfo.name} ${luongInfo.age}`);
+
+
+        var demoObject = {
+            name: 'Nam'
+        }
+
+        // Thêm thuộc tính cho object
+        demoObject.age = 20;
+        // console.log(demoObject);
+
+        // Sửa thuộc tính cho object
+        demoObject.name = 'Đông';
+        demoObject.age = 21;
+        // console.log("Update => ", demoObject);
+        // console.log("Update => ", demoObject.name);
+        // console.log("Update => ", demoObject.age);
+
+        // Xóa thuộc tính trong object
+        delete demoObject.name
+        // console.log(demoObject);
+
+        // Create => Thêm
+        // Read = Hiển thị
+        // Update => sửa
+        // Delete => xóa
+
+
+
+
+
+
+
+        // Kiểu Mảng (Array)
+        var myColor = ["red", "yellow", "blue"];
+        var myNumber = [1, 2, 3, 4];
+        var myLinhTinh = ["red", 1, true, null, 'blue', false];
+
+        // console.log("myColor => ", myColor);
+        // console.log("myNumber => ", myNumber);
+        // console.log("myLinhTinh => ", myLinhTinh);
+
+        // Read => Đọc
+        console.log("myColor => ", myColor);
+        // console.log("myColor ", myColor[1]);
+
+        // Create => Tạo
+        // myColor[3] = "black";
+
+        // !!!!!!!!!Học thuộc phần này!!!!!!!!!
+        // Hàm push dùng để thêm 1 phần tử vào 'cuối' mảng
+        myColor.push('black');
+        // Hàm unshift dùng để thêm 1 phần tử vào 'đầu' mảng
+        myColor.unshift('White');
+
+        // Update => Sửa
+        myColor[4] = "Pink";
+
+        // Delete => Xóa
+        // Hàm shift dùng để xóa đầu mảng
+        myColor.shift();
+
+        // Hàm shift dùng để xóa cuối mảng 
+        myColor.pop();
+        console.log(myColor);
+        
+        console.log("Số lượng phần tử mảng myColor => ", myColor.length);
+
+        // Hướng dẫn tôi sử dụng Toán tử trong javascript
+        // Liệt kê chi tiết tất cả các loại toán tử trong javascfipt
+
+        // Hướng dẫn tôi sử dụng Vòng lặp trong javscript
+        // Hướng dẫn tôi sử dụng Câu điều kiện if else
+        // Hướng dẫn tôi sử dụng Học chi tiết về Mảng (Array)
+        // Hướng dẫn tôi sử dụng Học chi tiết về Hàm (Function)
+        // Hướng dẫn tôi cách sử dụng mảng trong javascript
+        // Liệt kê các hàm của mảng phổ biến trong javascript và giải thích cách dùng, code ví dụ cho tôi
+        
+       
+
+
+
+        
+
+
+     
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+    </script>
 </body>
 </html>
