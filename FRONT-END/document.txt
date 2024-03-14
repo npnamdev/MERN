@@ -1,0 +1,403 @@
+ // Sử dụng var:
+ var x = 5;
+ var name = "John";
+
+ // Sử dụng let:
+ let y = 10;
+ let age = 25;
+
+ // Sử dụng const:
+ const PI = 3.14;
+ const MAX_SIZE = 100;
+
+
+
+ // Sự khác biệt giữa var, let, và const:
+ // var được sử dụng để khai báo biến có phạm vi toàn cục hoặc phạm vi hàm. Biến được khai báo bằng var có thể được khai báo lại và cập nhật giá trị.
+
+ // let được sử dụng để khai báo biến trong phạm vi block. Biến được khai báo bằng let không thể được khai báo lại trong cùng phạm vi và không bị hoisting.
+
+ // const tạo một hằng số có thể không thay đổi giá trị sau khi được gán. Biến được khai báo bằng const phải được gán giá trị khi khai báo và không thể được gán lại giá trị mới.
+
+
+
+
+ // Quy tắc đặt tên biến:
+
+ // Tên biến nên được chọn sao cho dễ hiểu và mô tả chức năng của biến.
+
+ // Bắt đầu tên biến bằng chữ cái (a-z hoặc A-Z), dấu gạch dưới (_) hoặc ký tự dấu gạch (không được bắt đầu bằng số).
+
+ // Tên biến không được sử dụng các từ khóa đã được JavaScript định nghĩa (ví dụ như "let", "const", "if", "for", v.v.).
+
+ // Thường thì tên biến được đặt bằng cách sử dụng chữ thường và sử dụng dấu gạch dưới (_) để phân tách các từ (ví dụ: my_variable_name).
+
+ // Các loại kiểu đặt tên biến:
+
+ // Camel Case
+ var myVariableName = "value";
+ var firstName = "John";
+ var numberOfStudents = 20;
+
+ // Pascal Case
+ var MyVariableName = "value";
+ var FirstName = "John";
+ var NumberOfStudents = 20;
+
+ // Kiểu Snake
+ var my_variable_name = "value";
+ var first_name = "John";
+ var number_of_students = 20;
+
+
+
+
+ // các kiểu dữ liệu cơ bản và phức tạp trong JavaScript
+ // Kiểu dữ liệu cơ bản(kiểu nguyên thủy):
+
+ // Số (Number): Đại diện cho các giá trị số.
+ var num = 10;
+ var pi = 3.14;
+
+ // Chuỗi (String): Đại diện cho dãy ký tự.
+ var name = "John";
+ var message = 'Hello, world!';
+
+ // Boolean: Đại diện cho giá trị true hoặc false.
+ var isTrue = true;
+ var isFalse = false;
+
+ // Null: Đại diện cho một giá trị rỗng hoặc không tồn tại.
+ var nullValue = null;
+
+ // Undefined: Biến chưa được gán giá trị.
+ var undefinedValue;
+
+ // Kiểu dữ liệu Nâng cao:
+ // Mảng (Array): Đại diện cho một tập hợp các giá trị.
+ var numbers = [1, 2, 3, 4, 5];
+ var names = ["John", "Jane", "Doe"];
+
+ // Đối tượng (Object): Đại diện cho một tập hợp các thuộc tính và giá trị.
+ var person = {
+     name: "John",
+     age: 30,
+     isStudent: false
+ };
+
+ // Kiểu dữ liệu động:
+ var dynamicVariable = 10; // Biến này có kiểu dữ liệu là số
+ dynamicVariable = "Hello"; // Biến này bây giờ có kiểu dữ liệu là chuỗi
+ dynamicVariable = true; // Biến này bây giờ có kiểu dữ liệu là boolean
+
+
+
+ // các toán tử phổ biến
+ // Toán tử số học
+
+ // Toán tử cộng (+): Thực hiện phép cộng hai giá trị hoặc nối hai chuỗi.
+ var sum = 5 + 3; // sum = 8
+ var fullName = "John" + " " + "Doe"; // fullName = "John Doe"
+
+ // Toán tử trừ (-): Thực hiện phép trừ hai giá trị.
+ var difference = 10 - 5; // difference = 5
+
+ // Toán tử nhân (*): Thực hiện phép nhân hai giá trị.
+ var product = 4 * 3; // product = 12
+
+ // Toán tử chia (/): Thực hiện phép chia hai giá trị.
+ var quotient = 20 / 5; // quotient = 4
+
+
+
+ // Toán tử gán:
+
+ // Toán tử gán (=): Gán giá trị bên phải cho biến bên trái.
+ var x = 10; // Biến x được gán giá trị là 10
+ var y = x + 5; // Biến y được gán giá trị là giá trị của x cộng thêm 5
+
+ // Toán tử so sánh:
+ var a = 5;
+ var b = "5";
+ console.log(a == b); // true, vì giá trị của a và b là giống nhau
+
+ // Toán tử so sánh tuyệt đối (===): So sánh xem hai giá trị có bằng nhau không (bao gồm cả kiểu dữ liệu).
+ var a = 5;
+ var b = "5";
+ console.log(a === b); // false, vì kiểu dữ liệu của a là số, còn b là chuỗi
+
+
+// //  forEach: Dùng để duyệt qua từng phần tử trong mảng và thực hiện một hành động cho mỗi phần tử.
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.forEach(number => console.log(number * 2));
+
+// // map: Tạo một mảng mới bằng cách thực hiện một hàm cho mỗi phần tử trong mảng.
+// const numbers = [1, 2, 3, 4, 5];
+// const doubledNumbers = numbers.map(number => number * 2);
+// console.log(doubledNumbers);
+
+// // filter: Tạo một mảng mới chỉ chứa các phần tử thỏa mãn một điều kiện nhất định.
+// const numbers = [1, 2, 3, 4, 5];
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+// console.log(evenNumbers);
+
+// // reduce: Tính toán một giá trị duy nhất từ một mảng bằng cách tích hợp các phần tử của mảng.
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log(sum);
+
+// // find: Tìm phần tử đầu tiên trong mảng thỏa mãn một điều kiện nhất định.
+// const numbers = [1, 2, 3, 4, 5];
+// const foundNumber = numbers.find(number => number > 3);
+// console.log(foundNumber);
+
+// // indexOf: Trả về chỉ mục đầu tiên của một phần tử trong mảng, nếu không tìm thấy trả về -1.
+// const numbers = [1, 2, 3, 4, 5];
+// const index = numbers.indexOf(3);
+// console.log(index);
+
+// // slice: Tạo một bản sao của một phần của mảng từ một chỉ mục bắt đầu đến một chỉ mục kết thúc.
+// const numbers = [1, 2, 3, 4, 5];
+// const slicedNumbers = numbers.slice(1, 3);
+// console.log(slicedNumbers);
+
+// // splice: Thay đổi nội dung của mảng bằng cách loại bỏ hoặc thay thế các phần tử.
+// const numbers = [1, 2, 3, 4, 5];
+// const slicedNumbers = numbers.slice(1, 3);
+// console.log(slicedNumbers);
+
+// // concat: Kết hợp hai hoặc nhiều mảng thành một mảng mới.
+// const arr1 = [1, 2];
+// const arr2 = [3, 4];
+// const combinedArray = arr1.concat(arr2);
+// console.log(combinedArray);
+
+// // every: Kiểm tra xem tất cả các phần tử trong mảng có thỏa mãn một điều kiện nhất định không.
+// const numbers = [2, 4, 6, 8, 10];
+// const allEven = numbers.every(number => number % 2 === 0);
+// console.log(allEven);
+
+
+
+
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+// forEach
+console.log("forEach:");
+numbers.forEach(number => console.log(number * 2)); // 2 // 4 // 6 // 8 // 10
+
+// map
+console.log("map:");
+const doubledNumbers = numbers.map(number => number * 2);
+console.log(doubledNumbers); // [ 2, 4, 6, 8, 10 ]
+
+// filter
+console.log("filter:");
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+console.log(evenNumbers); // [ 2, 4 ]
+
+// reduce
+console.log("reduce:");
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum); // 15
+
+// find
+console.log("find:");
+const foundNumber = numbers.find(number => number > 3);
+console.log(foundNumber); // 4
+
+// indexOf
+console.log("indexOf:");
+const index = numbers.indexOf(3);
+console.log(index); // 2
+
+// slice
+console.log("slice:");
+const slicedNumbers = numbers.slice(1, 3);
+console.log(slicedNumbers); // [ 2, 3 ]
+
+// splice
+console.log("splice:");
+numbers.splice(2, 1); // Xóa một phần tử từ chỉ mục 2
+console.log(numbers); // [ 1, 2, 4, 5 ]
+
+// concat
+console.log("concat:");
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+const combinedArray = arr1.concat(arr2);
+console.log(combinedArray); // [ 1, 2, 3, 4 ]
+
+// every
+console.log("every:");
+const allEven = numbers.every(number => number % 2 === 0);
+console.log(allEven); // false
+
+
+
+
+
+
+
+
+
+// Toán tử số học:
+
+// Toán tử cộng (+)
+const resultAddition = 5 + 3; // Kết quả: 8
+
+// Toán tử trừ (-)
+const resultSubtraction = 5 - 3; // Kết quả: 2
+
+// Toán tử nhân (*)
+const resultMultiplication = 5 * 3; // Kết quả: 15
+
+// Toán tử chia (/)
+const resultDivision = 6 / 2; // Kết quả: 3
+
+// Toán tử chia lấy phần dư (%)
+const resultModulus = 5 % 2; // Kết quả: 1 (5 chia cho 2 dư 1)
+
+
+// Toán tử gán:
+
+let x = 5;
+let y = 3;
+
+// Toán tử gán (=)
+let z = x + y; // Kết quả: 8
+
+
+// Toán tử so sánh:
+let a = 5;
+let b = "5";
+
+// Toán tử bằng (==)
+const resultEqual = a == b; // Kết quả: true (so sánh giá trị)
+
+// Toán tử bằng dùng kiểu (===)
+const resultStrictEqual = a === b; // Kết quả: false (so sánh giá trị và kiểu dữ liệu)
+
+
+// Toán tử logic:
+let p = true;
+let q = false;
+
+// Toán tử AND (&&)
+const resultAnd = p && q; // Kết quả: false (true && false = false)
+
+// Toán tử OR (||)
+const resultOr = p || q; // Kết quả: true (true || false = true)
+
+// Toán tử NOT (!)
+const resultNotP = !p; // Kết quả: false (!true = false)
+
+
+// Toán tử ba ngôi:
+
+let isRainy = true;
+
+// Toán tử ba ngôi (condition ? value1 : value2)
+const weather = isRainy ? "Bring an umbrella" : "Enjoy the sunshine";
+// Kết quả (nếu isRainy là true): "Bring an umbrella"
+// Kết quả (nếu isRainy là false): "Enjoy the sunshine"
+
+
+
+
+
+
+
+let x = 5;
+let y = "5";
+let a = 10;
+let b = 5;
+
+// Toán tử bằng (==)
+const resultEqual = x == y; // Kết quả: true (so sánh giá trị, chuyển đổi kiểu nếu cần)
+
+// Toán tử bằng dùng kiểu (===)
+const resultStrictEqual = x === y; // Kết quả: false (so sánh giá trị và kiểu dữ liệu)
+
+// Toán tử khác (!=)
+const resultNotEqual = x != y; // Kết quả: false (5 không khác "5")
+
+// Toán tử khác dùng kiểu (!==)
+const resultStrictNotEqual = x !== y; // Kết quả: true (5 khác "5" về kiểu dữ liệu)
+
+// Toán tử lớn hơn (>)
+const resultGreaterThan = a > b; // Kết quả: true (10 lớn hơn 5)
+
+// Toán tử nhỏ hơn (<)
+const resultLessThan = a < b; // Kết quả: false (10 không nhỏ hơn 5)
+
+// Toán tử lớn hơn hoặc bằng (>=)
+const resultGreaterThanOrEqual = a >= 10; // Kết quả: true (a bằng 10)
+
+// Toán tử nhỏ hơn hoặc bằng (<=)
+const resultLessThanOrEqual = b <= 5; // Kết quả: true (b bằng 5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Bài tập về nhà:
+
+// Câu lệnh điều kiện:
+// Bài tập 1: Kiểm tra xem một số có phải là số chẵn hay không.
+// Bài tập 2: Xác định một số là số dương, số âm hay số không.
+// Bài tập 3: So sánh hai số và in ra số lớn hơn.
+
+// Vòng lặp:
+// Bài tập 1: In ra các số từ 1 đến 10 bằng vòng lặp for.
+// Bài tập 2: Tính tổng các số từ 1 đến 10 bằng vòng lặp while.
+// Bài tập 3: In ra các phần tử trong một mảng bằng vòng lặp for...of.
+// Hàm:
+
+// Bài tập 1: Viết một hàm để tính tổng của hai số.
+// Bài tập 2: Viết một hàm để kiểm tra một số có phải là số nguyên tố hay không.
+// Bài tập 3: Viết một hàm để đảo ngược một chuỗi.
+
+// Mảng và Object:
+// Bài tập 1: Tạo một mảng chứa tên của các quốc gia.
+// Bài tập 2: Tạo một object đại diện cho một người với các thuộc tính như name, age, job.
+// Bài tập 3: Thêm và xóa một phần tử trong mảng.
+
+// Xử lý chuỗi:
+// Bài tập 1: Viết một hàm để đảo ngược một chuỗi.
+// Bài tập 2: Tách một chuỗi thành một mảng các từ.
