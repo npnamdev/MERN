@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2 Javascript</title>
+</head>
+<body>
+    <!-- Viết code javascript trong thẻ html script (không quan tâm bên trên) -->
+    <script>
+        // Ôn lại về khai báo biến và kiểu dữ liệu
+        // Number
+        var myNumber = 1;
+        // String
+        var myString = 2;
+        // Boolean
+        var myBoolean = false;
+        // Null
+        var myNull = null;
+        // Undefined
+        var myUndefined;
+        // Object
+        var myObject = { name: 'Nam', age: 23}
+        // Array
+        var myArray = ['black', 2, true, null, undefined];
+        // Create, Read, Update, Delete
+
+
+
+        // ===============Bài mới===============
+        // Toán tử 
+
+        // Toán tử số học:
+        var a = 7;
+        var b = 3;
+        // console.log("a + b = ", a + b);
+        // console.log("a + b = ", a - b);
+        // console.log("a + b = ", a * b);
+        // console.log("a + b = ", a / b);
+        // console.log("a % b = ", a % b);
+
+
+        // Toán tử gán (=)
+        var x = 5;
+        var y = 3;
+        var z = x + y; // Kết quả: 8
+        // console.log("z = ", z);
+
+
+        // Toán tử so sánh:
+        var c = 10;
+        var d = '10';
+        // console.log(c < d);
+        // console.log(c > d);
+        // console.log(c <= d);
+        // console.log(c >= d);
+        // console.log(c == d);
+        // console.log(c === d);
+
+
+        // Toán tử logic: OR AND NOT
+        var myBoolean1 = true;
+        var myBoolean2 = false;
+
+        // Phép END
+        // a đúng b sai =>  false
+        // a sai b đúng => false
+        // a sai b sai => false
+        // a đúng b đúng => đúng //
+
+        // Phép OR
+        // a đúng b sai =>  true
+        // a sai b đúng => true
+        // a sai b sai => false 
+        // a đúng b đúng => true
+
+        // END => đúng khi tất cả đều đúng và trả về true
+        // OR => chỉ cần 1 cái đúng thì trả về true
+        // console.log(!myBoolean1 && myBoolean2); // AND
+        // console.log(!myBoolean1 || myBoolean2); //OR
+        // console.log(!myBoolean1); // NOT
+
+
+
+
+
+        // ===========Câu điều kiện============
+        // Điều kiện so sánh luôn trả về true hoặc false
+        // Trả về kiểu boolean
+
+        // if(dieu_kien_so_sanh){
+            // nếu đúng thực thi mã trong này
+        // }
+
+        // var a1 = 10;
+        // var a2 = 10;
+
+        // ===Câu điều kiện if-else
+        // if(a1 > a2){
+        //     console.log('A1 lớn hơn A2');
+        // }else{
+        //     console.log('A1 bé hơn A2');
+        // }
+
+        // Câu điều kiện if-else if-else
+        // if(a1 > a2){
+        //     console.log('A1 lớn hơn A2');
+        // }else if(a1 < a2){
+        //     console.log('A1 bé hơn A2');
+        // }else{
+        //     console.log('A1 bằng A2');
+        // }
+
+
+
+        // Câu điều kiện switch case
+        // switch (dieu_kiện_so_sanh) {
+        //     case ket_qua_so_sanh_1:
+        //         break;
+        //     case ket_qua_so_sanh_2:
+        //         break;
+        //     case ket_qua_so_sanh_n:
+        //         break;
+        //     default: (nếu các giá trị so sánh trên không đúng, thì trả về default)
+        //         break;
+        // }
+
+        // var day = 9;
+        // switch (day) {
+        //     case 2:
+        //         console.log('Thứ 2');
+        //         break;
+        //     case 3:
+        //         console.log('Thứ 3');
+        //         break;
+        //     case 4:
+        //         console.log('Thứ 4');
+        //         break;
+        //     case 5:
+        //         console.log('Thứ 5');
+        //         break;
+        //     case 6:
+        //         console.log('Thứ 6');
+        //         break;
+        //     case 7:
+        //         console.log('Thứ 7');
+        //         break;
+        //     case 8:
+        //         console.log('Thứ 8');
+        //         break;
+        //     default:
+        //         console.log('Không có thứ này trong tuần!');
+        //         break;
+        // }
+
+
+        // Câu điều kiện 3 ngôi
+
+        // CÚ PHÁP:
+        // dieu_kien ? "trả về nếu điều kiện đúng" : "trả về nếu điều kiện sai"
+
+        var a = 10;
+        var b = 20;
+        // if(a > b){
+        //     console.log("a lớn hơn b");
+        // }else{
+        //     console.log("a nhỏ hơn b");
+        // }
+
+        // a > b ? console.log("a lớn hơn b") : console.log("a nhỏ hơn b")
+
+
+
+
+
+        // =================VÒNG LẶP====================
+        // Vòng for
+        // CÚ PHÁP: 
+
+        // for(gia_tri_ban_dau; dieu_kien_so_sanh; tang_gia_tri_len){
+        //      Nếu điều kiện đúng sẽ chạy vào vòng lặp này
+        // }
+
+        // console.log(1);
+        // console.log(2);
+        // console.log(3);
+        // console.log(4);
+        // console.log(5);
+
+        // i++ => i = i + 1;
+        
+        // for(var i = 1; i <= 5; i++){
+        //     console.log(i);
+        // }
+
+        // Vòng 1: v1 -> v2 -> log -> v3(i = 2)
+        // Vòng 2: v2 -> log -> v3(i = 3)
+        // Vòng 3: v2 -> log -> v3(i = 4)
+        // Vòng 4: v2 -> log -> v3(i = 5)
+        // Vòng 5: v2 -> log(5) -> v3(i = 6)
+        // Vòng 6: v2 sai và dừng lại
+
+        // In ra (số chẵn) trong khoản từ 1 - 10;
+        // Cách 1:
+        // for(var i = 2; i <= 10; i+=2){
+        //     console.log(i);
+        // }
+        
+        // Cách 2:
+        // for(var i = 1; i <= 10; i++){
+        //     if(i % 2 != 0){
+        //         console.log(i);
+        //     }
+        // }
+
+        // 1 % 2 dư 1
+        // 2 % 2 dư 0
+        // 3 % 2 dư 1
+        // 4 % 2 dư 0
+        // 5 % 2 dư 1
+
+
+
+        // Vòng lặp white
+
+        // Cú pháp:
+
+        // var i = 1;
+        // while (dieu_kien) {
+        //     // Nếu đúng thực hiện mã trong này
+        //     i++;
+        // }
+        
+        // In ra (số chẵn) trong khoản từ 1 - 10;
+        // var i = 1;
+        // while (i <= 10) {
+        //     if(i % 2 == 0){
+        //         console.log(i);
+        //     }
+        //     i++;
+        // }
+        
+        // var myColor = ['red', 'blue', 'green', 'yellow'];
+
+        // console.log("myColor => ", myColor);
+        
+        // console.log(myColor[0]);
+        // console.log(myColor[1]);
+        // console.log(myColor[2]);
+        // console.log(myColor[3]);
+        // for(var i = 0; i <= 3; i++){
+        //     console.log(myColor[i]);
+        // }
+        // var i = 0;
+        // while (i <= 3) {
+        //     console.log(myColor[i]);
+        //     i++;
+        // }
+
+        
+    </script>
+</body>
+</html>
