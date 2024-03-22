@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <script>
+        // length: Đếm độ dài của mảng 
+        // var arr = [1, 2, 3];
+        // console.log(arr.length);
+
+        
+        // push(): Thêm một hoặc nhiều phần tử vào cuối mảng và trả về độ dài mới của mảng.
+        // var arr = [1, 2, 3];
+        // arr.push(4, 5);
+        // console.log(arr); // Output: [1, 2, 3, 4, 5]
+
+      
+        // pop(): Xóa phần tử cuối cùng của mảng và trả về phần tử đã xóa.
+        // var arr = [1, 2, 3];
+        // var removedElement = arr.pop();
+        // console.log(arr); // Output: [1, 2]
+        // console.log(removedElement); // Output: 3
+
+      
+        // shift(): Xóa phần tử đầu tiên của mảng và trả về phần tử đã xóa.
+        // var arr = [1, 2, 3];
+        // var removedElement = arr.shift();
+        // console.log(arr); // Output: [2, 3]
+        // console.log(removedElement); // Output: 1
+
+
+        // unshift(): Thêm một hoặc nhiều phần tử vào đầu mảng và trả về độ dài mới của mảng.
+        // var arr = [2, 3];
+        // arr.unshift(0, 1);
+        // console.log(arr); // Output: [0, 1, 2, 3]
+        
+
+        // concat(): Kết hợp mảng hiện tại với một hoặc nhiều mảng khác và trả về mảng mới.
+        // var arr1 = [1, 2];
+        // var arr2 = [3, 4];
+        // var newArr = arr1.concat(arr2);
+      
+        // console.log(newArr); // Output: [1, 2, 3, 4]
+
+
+
+        // slice(): Sao chép một phần của mảng và trả về một mảng mới mà không làm thay đổi mảng ban đầu.
+
+        // slice(chi_so_mang_bat_dau, chi số kết thúc - 1)
+        // var arr = [1, 2, 3, 4, 5];
+        // console.log(arr);
+        // var slicedArr = arr.slice(1, 4);
+        // console.log(slicedArr); // Output: [2, 3, 4]
+
+        // forEach(): Gọi một hàm một lần cho mỗi phần tử trong mảng.
+        // const arr = [1, 2, 3];
+        // arr.forEach(item => {
+        //     console.log(item * 2);
+        // });
+        // Output:
+        // 2
+        // 4
+        // 6
+
+        // includes(): Kiểm tra xem một mảng có chứa một giá trị cụ thể hay không và trả về true hoặc false.
+        // const arr = [1, 2, 3, 4, 5];
+        // const hasThree = arr.includes(9);
+        // console.log(hasThree); // Output: true
+        
+
+        // reverse(): Đảo ngược thứ tự của các phần tử trong mảng.
+        // const arr = [1, 2, 3, 4, 5];
+        // arr.reverse();
+        // console.log(arr); // Output: [5, 4, 3, 2, 1]
+
+
+        // join(): Chuyển đổi tất cả các phần tử của một mảng thành một chuỗi và nối chúng bằng một dấu phân cách được chỉ định.
+
+        // const arr = ['apple', 'banana', 'orange'];
+        // const joinedStr = arr.join(', ');
+        // console.log(joinedStr); // Output: "apple, banana, orange"
+
+        // const arr2 = ["10", "05", "2023"];
+        // const joinedStr2 = arr2.join('-');
+        // console.log(joinedStr2); // Output: "apple, banana, orange"
+
+
+        // sort(): Sắp xếp các phần tử của mảng theo thứ tự Unicode hoặc theo một hàm so sánh. (sắp sếp apha B)
+        // const arr = [3, 1, 4, 1, 5, 9, 2, 6];
+        // arr.sort();
+        // console.log(arr); // Output: [1, 1, 2, 3, 4, 5, 6, 9]
+        
+
+        // findIndex(): Trả về chỉ số của phần tử đầu tiên trong mảng mà thỏa mãn một điều kiện được chỉ định bởi hàm. Nếu không tìm thấy, trả về -1.
+
+        // const arr = [10, 20, 30, 40, 50];
+        // const index = arr.findIndex(item => item > 25);
+        // console.log(index); 
+
+        // Vòng 1: 0 -> 10 > 25 = false
+        // Vòng 2: 1 -> 20 > 25 = false
+        // Vòng 3: 2 -> 30 > 25 = true // đã tìm ra phần tử thỏa mãi nên dừng vòng lặp
+        // Vòng 4:
+        // Vòng 5:
+
+
+        // keys(): Trả về một đối tượng Iterator chứa các chỉ số của mảng.
+        // const arr = ['a', 'b', 'c'];
+        // for (var value of arr) {
+        //     console.log(value); // Output: 0, 1, 2
+        // }
+
+        // const keys = arr.keys();
+        // // keys = [0, 1, 2]
+
+        // for (var value of keys) {
+        //     console.log(value); // Output: 0, 1, 2
+        // }
+
+
+        // values(): Trả về một đối tượng Iterator chứa các giá trị của mảng.
+        // const arr = ['a', 'b', 'c'];
+        // for (var value of arr) {
+        //     console.log(value); 
+        // }
+
+        // entries(): Trả về một đối tượng Iterator chứa cặp giá trị [index, value] cho từng phần tử trong mảng.
+        // var arr = ['a', 'b', 'c'];
+        // var entries = arr.entries();
+
+        // for (var [index, value] of entries) {
+        //     console.log(index, value); 
+        // }
+
+
+        // map() để tạo một mảng mới từ một mảng hiện có:
+        // const numbers = [1, 2, 3, 4, 5];
+        // const doubledNumbers = numbers.map(num => num * 2);
+        // console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+        
+
+        // var colors = ["red", "green", "yellow", "black"];
+        // colors.map((color, index) => {
+        //     console.log(color);
+        //     console.log(index);
+        // });
+
+
+        // function nam(){
+        //     console.log("abc");
+        // }
+
+        // const nam2 = function(){
+        //     console.log(def);
+        // }
+
+        // const nam3 = () => console.log('nam');
+
+        // () => {} //callback
+        
+        // find: Hàm này trả về phần tử đầu tiên trong mảng thỏa mãn điều kiện được cung cấp trong hàm callback. Nếu không có phần tử nào thỏa mãn, nó trả về undefined.
+        // const arr = [5, 12, 8, 130, 44];
+        // const found = arr.find(item => item > 10); // Trả về 12
+        
+
+        // filter: Hàm này trả về một mảng mới chứa tất cả các phần tử trong mảng gốc thỏa mãn điều kiện được cung cấp trong hàm callback.
+        // const arr = [5, 12, 8, 130, 44];
+        // const filtered = arr.filter(element => element > 10); // Trả về [12, 130, 44]
+
+
+        // some: Hàm này trả về true nếu ít nhất một phần tử trong mảng thỏa mãn điều kiện được cung cấp trong hàm callback, ngược lại trả về false.
+
+        // const arr = [5, 2, 8, 130, 44];
+        // const hasLargeNumbers = arr.some(element => element > 10); // Trả về true
+        // console.log(hasLargeNumbers);
+
+
+        // every: Hàm này trả về true nếu tất cả các phần tử trong mảng đều thỏa mãn điều kiện được cung cấp trong hàm callback, ngược lại trả về false.
+            
+
+        // const arr = [52, 12, 28, 130, 44];
+        // const allLargeNumbers = arr.every(element => element > 10); // Trả về false
+        // console.log(allLargeNumbers);
+
+
+        // indexOf: Hàm này trả về chỉ số của phần tử đầu tiên trong mảng có giá trị bằng giá trị được cung cấp, hoặc -1 nếu không tìm thấy.
+
+        // const arr = [2, 3, 5, 9];
+        // const index = arr.indexOf(5); // Trả về 1
+        // if(index != -1){
+        //     console.log("Phần tử của bạn có trong mảng");
+        // }
+        // console.log(index);
+
+
+        // lastIndexOf: Hàm này tìm kiếm phần tử cuối cùng có giá trị được cung cấp trong mảng và trả về chỉ số của nó. Nếu không tìm thấy, trả về -1.
+
+        // const arr = [2, 5, 9, 5];
+        // const lastIndex = arr.lastIndexOf(4); 
+        // console.log(lastIndex);
+
+    </script>
+</body>
+</html>
