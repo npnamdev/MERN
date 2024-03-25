@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overlay{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            opacity: 0.4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        .modal{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            background-color: white;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    
+        
+    <button onclick="showModal()">Hiện modal</button>
+
+    <div class="modal">
+        <button onclick="hideModal()">Ẩn modal</button>
+    </div>
+    <div class="overlay"></div>
+
+    <script>
+        var modal = document.querySelector('.modal');
+        var overlay = document.querySelector('.overlay');
+        // var btn = document.querySelector('button');
+        // var isModal = false; // Đặt cờ hiệu
+
+        // var toggleModal = () => {
+        //     isModal = !isModal;
+        //     if(isModal == true){
+        //         btn.innerHTML = "Ẩn Modal"
+        //         modal.style.display = "block"
+        //     }else{
+        //         btn.innerHTML = "Hiện Modal"
+        //         modal.style.display = "none"
+        //     }
+        // }
+
+        // Click lần 1 => isModal = true
+        // Click lần 2 => 
+
+        var showModal = () => {
+            modal.style.display = "block";
+            overlay.style.display = "block";
+        }
+
+        var hideModal = () => {
+            modal.style.display = "none";
+            overlay.style.display = "none";
+        }
+    </script>
+</body>
+</html>

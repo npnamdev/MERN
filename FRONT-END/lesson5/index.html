@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /* #heading {
+            color: red;
+        } */
+
+     
+    </style>
+</head>
+<body>
+    <!-- <div class="box">Box</div> -->
+
+    <script>
+        // Css cho element
+        // var box = document.querySelector('.box');
+        // 1. Thuộc tính style
+        // box.style.background = 'red';
+        // box.style.color = 'yellow'
+        // box.style.width = '100px';
+        // box.style.height = '100px';
+        // box.style.textAlign = 'center';
+        // box.style.lineHeight = '100px';
+
+
+        // var boxStyle = {
+        //     background: 'red',
+        //     color: 'yellow',
+        //     width: '100px',
+        //     height: '100px',
+        //     textAlign: 'center',
+        //     lineHeight: '100px',
+        // }
+        // Object.assign(box.style, boxStyle);
+
+
+        // 2. Thuộc tính chỉnh sửa text
+        // var box = document.querySelector('.box');
+        // box.innerText = "Lương Bịp";
+        // box.textContent = "Lương Bịp";
+        // box.innerHTML = "<h1>Lương Bịp</h1>";
+
+
+
+        // 3. Thuộc tính thêm attribute cho element
+        // var box = document.querySelector('.box');
+        // box.setAttribute('id', 'box');
+
+        // 4. Thuộc tính in lên màn hình
+        // document.write('abc');
+
+        // getAttribute(): Phương thức này cho phép bạn lấy giá trị của một thuộc tính cụ thể của một phần tử.
+        // style: Thuộc tính này cho phép bạn truy cập và cập nhật các thuộc tính CSS của một phần tử.
+        // classList: Thuộc tính này cung cấp các phương thức để thêm, xóa và kiểm tra các lớp CSS của một phần tử.
+        // appendChild(): Phương thức này cho phép bạn thêm một phần tử con vào phần tử được chọn.
+        // removeChild(): Phương thức này cho phép bạn xóa một phần tử con khỏi phần tử được chọn.
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var heading = document.querySelectorAll('#heading');
+        // for(var i = 0; i <= heading.length - 1; i++){
+        //     heading[i].style.background = "red"
+        // }
+
+        // var heading = document.querySelector('h3');
+        // heading.style.color = "yellow";
+
+
+        // Tổng kết Các phương thức truy cập DOM
+        // document.getElementById();
+        // document.querySelector();
+        // document.getElementsByClassName();
+        // document.getElementsByTagName();
+        // document.querySelectorAll();
+        // document.getElementsByName();
+
+
+
+        // DOM (Document Object Modal) 
+        // Cú pháp: document.getElementById('id của thẻ muốn lấy')
+        // var heading = document.getElementById("heading");
+        // console.log("heading => ", heading);
+
+
+        // Cú pháp: document.querySelector('selector muốn lấy')
+        // Seclector bao gồm: class, id, tên thẻ
+        // var heading = document.querySelector('h1');
+        // var heading = document.querySelector('#heading');
+        // var heading = document.querySelector('.heading');
+        // heading.style.color = "red";
+        // console.log("heading => ", heading);
+
+
+        // Cú pháp: document.getElementsByClassName('heading');
+        // Phương thức getElementsByClassName() luôn trả về mảng
+        // var heading = document.getElementsByClassName('heading');
+        // heading[0].style.color = "red";
+        // heading[1].style.color = "yellow";
+        // console.log("heading => ", heading);
+
+
+        // Cú pháp: document.getElementsByTagName('heading');
+        // Phương thức getElementsByTagName() luôn trả về mảng
+        // var heading = document.getElementsByTagName('button');
+        // heading[0].style.background = 'red';
+        // heading[1].style.background = 'yellow';
+        // console.log(heading);
+
+
+        // Cú pháp: document.getElementsByName();
+        // Phương thức này nhận vào các thẻ có thuộc tính name
+        // var heading = document.getElementsByName("demo");
+        // console.log(heading);
+
+
+        // Cú pháp: document.querySelectorAll();
+        // Phương thức querySelectorAll() nhận vào tất cả các loại selector
+        // var heading = document.querySelectorAll('.heading');
+        // var heading = document.querySelectorAll('#heading');
+        // var heading = document.querySelectorAll('[name="heading"]');
+        // console.log(heading);
+        // console.log(heading);
+        // heading[0].style.background = 'yellow';
+        // heading[1].style.background = 'red';
+        // heading[2].style.background = 'blue';
+
+
+        
+
+
+
+
+
+
+
+         // =====================
+
+        // CÁCH 1:
+        // var heading1 = document.getElementsByClassName("heading");
+        // heading1[0].style.background = 'yellow';
+        // heading1[1].style.background = 'red';
+        // heading1[2].style.background = 'blue';
+
+        // CÁCH 2:
+        // var heading1 = document.getElementById("heading1");
+        // var heading2 = document.getElementById("heading2");
+        // var heading3 = document.getElementById("heading3");
+        // heading1.style.background = 'yellow';
+        // heading2.style.background = 'red';
+        // heading3.style.background = 'blue';
+
+        // CÁCH 3:
+        // var heading1 = document.querySelector("#heading1");
+        // var heading2 = document.querySelector("#heading2");
+        // var heading3 = document.querySelector("#heading3");
+        // heading1.style.background = 'yellow';
+        // heading2.style.background = 'red';
+        // heading3.style.background = 'blue';
+
+        // CÁCH 4:
+        // var heading1 = document.getElementsByTagName("h1");
+        // console.log(heading1);
+        // heading1[0].style.background = 'yellow';
+        // heading1[1].style.background = 'red';
+        // heading1[2].style.background = 'blue';
+
+        
+    </script>
+</body>
+</html>
