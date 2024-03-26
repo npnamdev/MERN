@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-bottom: 10px;
+            transition: all 2s ease-in-out;
+        }
+
+        .animate{
+            transform: translateX(800px);
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+
+
+       
+    </style>
+</head>
+
+<body>
+    <!-- <h1 class="title" id="title1" name="title">Ôn lại bài cũ 1</h1>
+    <h1 class="title" id="title2" name="title">Ôn lại bài cũ 2</h1>
+    <h1 class="title" id="title3" name="title">Ôn lại bài cũ 3</h1> -->
+    
+
+    <div class="box">Box</div>
+    <div>
+        <button onclick="red()">Red</button>
+        <button onclick="green()">Green</button>
+        <button class="demo" onclick="toggle()">Bật</button>
+        <button onclick="reset()">Reset</button>
+    </div>  
+    
+    <script>
+        var box = document.querySelector('.box');
+        var btn = document.querySelector('.demo');
+        
+        const red = () => {
+            box.classList.remove('green');
+            box.classList.add('red');
+        }
+
+        const green = () => {
+            box.classList.remove('red');
+            box.classList.add('green');
+        }
+
+        const reset = () => {
+            box.classList.remove('green')
+            box.classList.remove('red')
+        }
+
+        var isBtn = true;
+        const toggle = () => {
+            box.classList.toggle('animate');
+            isBtn = !isBtn;
+            if(isBtn){
+                btn.innerHTML = "Bật";
+            }else{
+                btn.innerHTML = "Tắt";
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ==========Ôn lại bài cũ==============
+        // var title = document.querySelector('.title');
+        // title.style.background = 'yellow';
+        // var title = document.querySelectorAll('.title');
+        // for (var item of title) {
+        //     item.style.background = 'blue';
+        //     item.innerHTML = "Demo";
+        // }
+    </script>
+</body>
+
+</html>
